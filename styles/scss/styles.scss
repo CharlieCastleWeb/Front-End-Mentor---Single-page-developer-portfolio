@@ -1,0 +1,70 @@
+
+// RESET
+@import 'reset';
+
+// VARIABLES
+$black: #151515;
+$light-green: #151515;
+$dark-gray: #242424;        
+$light-gray: #D9D9D9;        
+
+// TYPOGRAPHY
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.55556rem; //28px
+    font-family: 'Space Grotesk';
+    //font-weight: 500;
+    color: white ;
+}
+
+header {
+    text-align: center;
+
+    p {
+        font-weight: 700;
+        font-size: 1.33333rem; //24px
+        line-height: 1.33333rem; //24px
+        letter-spacing: -0.01852rem; //-0.33333px
+    }
+}
+
+h1 {
+    font-size: 4.88889; //88px
+    font-weight: 700;
+    line-height: 4.88889rem; //88px
+    letter-spacing: -0.13889rem; //-2.5px
+}
+
+h2 {
+    font-size: 2.66667rem; //48px
+    //font-weight: 700;
+    line-height: 3.11111rem; //56px
+    letter-spacing: -0.08333rem; //-1.5px
+}
+
+h3 {
+    font-size: 1.33333rem; //24px
+    //font-weight: 700;
+    line-height: 1.77778rem; //32px
+}
+
+// LAYOUT
+body {
+    background-color: $black;
+}
+
+header {
+    width: 38%;
+    margin: 1.11111rem auto 0 auto;
+    
+    ul {
+        margin-top: 1.11111rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
