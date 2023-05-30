@@ -16,7 +16,7 @@ $light-gray: #D9D9D9;
 
 body {
     font-size: 18px;
-    line-height: 1.55556rem; //28px
+    line-height: 1.55556rem;
     font-family: 'Space Grotesk';
     //font-weight: 500;
     color: white ;
@@ -26,9 +26,9 @@ body {
     text-align: center;
     p {
         font-weight: 700;
-        font-size: 1.33333rem; //24px
-        line-height: 1.33333rem; //24px
-        letter-spacing: -0.01852rem; //-0.33333px
+        font-size: 1.5rem;
+        line-height: 1.33333rem;
+        letter-spacing: -0.01852rem; 
     }
 }
 
@@ -37,22 +37,22 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
-    letter-spacing: 0.12698rem; // 2.28571px
+    letter-spacing: 0.12698rem; 
     padding-bottom: 0.5rem;
 }
 
 .hero {
     text-align: center;
     h1 {
-        font-size: 2.22222rem; //40px
+        font-size: 2.5rem; 
         font-weight: 700;
-        line-height: 2.22222rem; //40px
-        letter-spacing: -0.06464rem; //-1.13636px
+        line-height: 2.5rem; 
+        letter-spacing: -0.06464rem; 
     }
 
     div {
-        font-size: 0.88889rem; // 16px
-        line-height: 1.44444rem; // 26px
+        font-size: 1rem; 
+        line-height: 1.6rem;
         p {
             font-weight: 500;
             color: $light-gray;
@@ -64,42 +64,53 @@ a {
     text-align: center;
     div {
         h3 {
-            font-size: 1.77778rem; //32px
+            font-size: 1.95rem; 
             font-weight: 700;
-            line-height: 2.22222rem; //40px
-            letter-spacing: -0.05555rem; //1px
+            line-height: 2.22222rem; 
+            letter-spacing: -0.05555rem; 
         }
         p {
             color: $light-gray;
-            font-size: 0.88889rem; //16px
-            line-height: 1.44444rem; //26px
+            font-size: 1rem; 
+            //line-height: 1.44444rem; 
             font-weight: 500;
         }
     }
 }
 
-.project {
-    div {
-        span {
-            color: $light-gray;
-            line-height: 1.55556rem;
-            text-transform: uppercase;
+.projects {
+    .projects-title {
+        a.underline {
+            font-size: 1.05rem;
+        }
+    }
+    .project {
+        div {
+            span {
+                color: $light-gray;
+                line-height: 1.55556rem;
+                text-transform: uppercase;
+            }
+        }
+        .project-links {
+            font-size: 1.035rem;
         }
     }
 }
+
 
 .contact {
     text-align: center;
     p {
         color: $light-gray;
-        font-size: 0.88888rem;
-        line-height: 1.44444rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
         font-weight: 500;
     }
     ::placeholder {
         font-family: 'Space Grotesk';
         color: rgba($color: white, $alpha: 0.5);
-        font-size: 0.88889rem;
+        font-size: 1rem;
         line-height: 1.44444rem;
         letter-spacing: -0.0123456;
         font-weight: 500;
@@ -110,28 +121,28 @@ a {
         text-transform: uppercase;
         color: white;
         font-weight: 700;
-        font-size: 0.88889rem;
-        line-height: 1.44444rem;
+        font-size: 0.95rem;
+        line-height: 1.4rem;
         letter-spacing: 0.12698rem;
     }
 }
 
 h2 {
-    font-size: 2.22222rem; //40px
+    font-size: 2.5rem; //40px
     font-weight: 700;
     line-height: 2.22222rem; //40px
     letter-spacing: -0.06313rem; //-1.13636px
 }
 
 h3 {
-    font-size: 2.22222rem;
+    font-size: 2.5rem;
     line-height: 2.22222rem;
     font-weight: 700;
     letter-spacing: -0.06313rem;
 }
 
 h4 {
-    font-size: 1.33333rem; //24px
+    font-size: 1.5rem; //24px
     font-weight: 700;
     line-height: 1.77778rem; //32px
     text-transform: uppercase;
@@ -145,66 +156,73 @@ body {
 }
 
 .social-links {
-    width: 38%;
+    width: 42%;
     margin: 0 auto;
-    padding-top: 1.11111rem;   
+    padding-top: 1.5rem;   
     ul {
-        margin-top: 1.11111rem;
+        margin-top: 1.65rem;
         display: flex;
         justify-content: space-between;
+        img {
+            width: 80%;
+        }
     }
+    
 }
-
-
 
 .hero {
     background-image: url('../../assets/images/pattern-rings.svg');
     background-repeat: no-repeat;
-    background-position: 230% 30%;
-
-    /*
-        SEGUIR POSICIONANDO EL ANILLO DE FONDO DEL HEADER
-    
-    */
-
+    background-position: 225% 25%;
     img {
         display: block;
         margin: 0 auto;
-        margin-top: -5.55rem;
+        margin-top: -6.1rem;
         width: 46.4%;
     }
 
     div {
         width: 91.46667%;
         margin: 0 auto;
-        margin-top: 2.22222rem; //40px
-        padding: 0 0.8rem;
+        margin-top: 2.475rem; //40px
+        padding: 0 0.1rem;
+        span.underline {
+            display: inline-block;
+            border-width: 4px;
+        }
         p {
             margin: 1.33333rem 0; // 24px
         }
 
     }
+    a.underline {
+        display: block;
+        width: 35%;
+        margin: 0 auto;
+        margin-top: 1.6rem;
+    }
 }
 
-a.underline {
-    border-width: 2px;
-}
 
 .skills,
 .projects,
 .contact div{
-    width: 92%;
+    width: 91.5%;
     margin: 0 auto;
 }
 
 .skills {
     border-top: 1px solid white;
-    margin-top: 4.44444rem;
+    margin-top: 5rem;
+    padding-top: 0.87rem;
     div {
         width: 92%;
         margin: 0 auto;
-        padding-top: 0.88888rem;
-        margin-top: 1.33333rem;
+        //padding-top: 1rem;
+        margin-top: 1.8rem;
+        p {
+            margin-top: 0.15rem;
+        }
     }
 }
 
@@ -219,12 +237,12 @@ a.underline {
 
 .projects {
     border-top: 1px solid white;
-    margin-top: 3rem;
-    padding-top: 5rem;
+    margin-top: 2.48rem;
+    padding-top: 5.15rem;
     position: relative;
     .background-image {
         top: -4rem;
-        left: 10rem;
+        left: 11rem;
     }
     .projects-title {
         display: flex;
@@ -232,23 +250,25 @@ a.underline {
         align-items: center;
     }
     .project {
-        margin-top: 2.22222rem; //18px
+        margin-top: 2.55rem; 
+        margin-bottom: 3.25rem;
         img {
             width: 100%;
         }
         h4 {
-            margin-top: 1.11111rem;
+            margin-top: 1rem;
         }
         div {
-            margin-top: 0.4rem;
+            margin-top: 0.6rem;
             span {
-                margin-right: 1rem;
+                margin-right: 0.9rem;
             }
         }
         .project-links {
-            margin-top: 1.11111rem;
+            margin-top: 1.5rem;
             a {
                 margin-right: 1.66667rem;
+                padding-bottom: 0.75rem;
             }
         }
     }
@@ -260,19 +280,20 @@ footer {
 }
 
 .contact {
-    margin-top: 3rem;
-    padding-top: 3rem;
+    margin-top: 5.7rem;
+    padding-top: 4rem;
     position: relative;
     .background-image {
         background-position-x: 100%;
-        top: 22rem;
-        left: -9rem;
+        top: 27rem;
+        left: -9.8rem;
     }
     p {
         margin-top: 1.11111rem;
     }
     form {
-        padding-bottom: 4.83rem;
+        margin-top: 1.3rem;
+        padding-bottom: 5.5rem;
         border-bottom: 1px solid white;
         input {
             background: none;
@@ -283,36 +304,37 @@ footer {
             border: none;
             border-bottom: 1px solid white;
             width: 100%;
-            margin-top: 1.77778rem;
-            padding-left: 1.33333rem;
-            padding-bottom: 0.88889rem;
+            margin-top: 2.2rem;
+            padding-left: 1.5rem;
+            padding-bottom: 1.3rem;
         }
         textarea {
             background: none;
             resize: none;
+            margin-top: 2rem;
+            padding-bottom: 0.9rem;
         }
         ::placeholder {
             display: block;
         }
         input[type=submit].underline {
             display: block;
-            width: 40%;
+            width: 42%;
             margin-top: 1.77778rem;
             margin-left: auto;
             padding: 0;
             padding-bottom: 0.55556rem;
             border-bottom: 4px solid #4EE1A0;
+            border-width: 2px;
         }
     }
 }
 
 footer {
-    
-    padding-top: 2rem;
+    padding-top: 1.4rem;
     padding-bottom: 4rem;
-
 }
 
 .underline {
-    border-bottom: 4px solid #4EE1A0;
+    border-bottom: 2px solid #4EE1A0;
 }
